@@ -27,36 +27,37 @@ Video Demonstration
 * Python
 * HTML
 * CSS
+* Fast API
+* Stripe API
+* SQL Alchemy
+* Bcrypt
 * Flask
   * login
   * session
   * admin
   * bcrypt
   * sqlalchemy
-* Fast API
-* Stripe API
-* SQL Alchemy
-* Bcrypt
-* Flask login,
-Python
-
-HTML
-
-CSS
-
-Flask 
-
-Stripe API
-
-Bycrypt
-
-SQL Alchemy
 
 
 ## Contact
 Feel free if you have any questions regarding the program
 email : stellan.lindrud@gmail.com
 
+
+## Installation
+
+To install, navigate to root directory of folder and install the requirements
+
+Windows: 
+```sh
+pip install -r requirements.txt
+```
+Then run the following command
+
+Run the file ( debug mode by default )
+```sh
+python -m app.py
+```
 
 ## Features
 
