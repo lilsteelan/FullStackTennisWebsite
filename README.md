@@ -24,6 +24,20 @@ when someone new has signed up for a lesson. All of which can be accessed and mo
 Video Demonstration
 
 ### Built With
+* Python
+* HTML
+* CSS
+* Flask
+  * login
+  * session
+  * admin
+  * bcrypt
+  * sqlalchemy
+* Fast API
+* Stripe API
+* SQL Alchemy
+* Bcrypt
+* Flask login,
 Python
 
 HTML
