@@ -46,11 +46,13 @@ email : stellan.lindrud@gmail.com
 
 ## Features
 
-Integrated Stripe Payment
-Automated & Encrypted Admin Dashboard
-SQL Alchemy database
-Website Scaling
-Session Data
+This project was designed to demonstrate:
+
+* Integrated Stripe Payment within flask
+  * Tech 1 subitem
+* SQL Alchemy DataBase Management
+* Dynamically Loaded Admin Dashboard
+* Session Data
 
 
 
