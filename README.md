@@ -10,6 +10,7 @@
 
 - [Overview](#overview)
 - [Built With](#built-with)
+- [Demonstration](#demonstration)
 - [Installation](#installation)
 - [Features](#features)
 - [Contact](#contact)
@@ -19,6 +20,21 @@
 This application allows customers to view, contact and sign up for tennis lessons, without the need for any third-party interactions. 
 The website includes integrated payments with stripe as well as automated statistics and notifications that are sent to the admin
 when someone new has signed up for a lesson. All of which can be accessed and modified through the dashboard.
+
+### Built With
+* Python
+* HTML
+* CSS
+* Fast API
+* Stripe API
+* SQL Alchemy
+* Bcrypt
+* Flask
+  * login
+  * session
+  * admin
+  * bcrypt
+  * sqlalchemy
 
 ## Demonstration
 
@@ -35,21 +51,6 @@ when someone new has signed up for a lesson. All of which can be accessed and mo
 <img src="https://github.com/lilsteelan/OcconorDummyWebsite/assets/62084214/46542751-5723-4e72-8c30-e3f9b4b4e150" alt="drawing" width="400"/>
 
 Video Demonstration
-
-### Built With
-* Python
-* HTML
-* CSS
-* Fast API
-* Stripe API
-* SQL Alchemy
-* Bcrypt
-* Flask
-  * login
-  * session
-  * admin
-  * bcrypt
-  * sqlalchemy
 
 
 ### Installation
