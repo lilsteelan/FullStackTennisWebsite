@@ -32,6 +32,7 @@ when someone new has signed up for a lesson. All of which can be accessed and mo
 <img src="https://github.com/lilsteelan/OcconorDummyWebsite/assets/62084214/7f1f13af-8875-40ff-a7f5-30ea8b0426ca" alt="drawing" width="400"/>
 
 *Lesson Selection Page
+<img src="https://github.com/lilsteelan/OcconorDummyWebsite/assets/62084214/46542751-5723-4e72-8c30-e3f9b4b4e150" alt="drawing" width="400"/>
 
 Video Demonstration
 
