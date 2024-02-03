@@ -10,6 +10,7 @@
 
 - [Overview](#overview)
 - [Built With](#built-with)
+- [Installation](#installation)
 - [Features](#features)
 - [Contact](#contact)
 
