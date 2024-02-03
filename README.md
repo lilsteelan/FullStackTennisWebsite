@@ -88,6 +88,7 @@ PEOPLEKEY = 'something_super_secret'
 This project was designed to demonstrate:
 
 * Integrated Stripe Payment within flask
+  * Stripe WebBooks
 * SQL Alchemy DataBase Management
 * Dynamically Loaded Admin Dashboard
 * Session Data
