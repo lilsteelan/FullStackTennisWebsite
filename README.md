@@ -69,7 +69,7 @@ email : stellan.lindrud@gmail.com
 
 <!-- Markdown link & img dfn's -->
 
-[header-url]: github-template.png
+[header-url]: banner.png
 [header-link]: https://github.com/alexandrerosseto
 
 [repository-url]: https://github.com/alexandrerosseto/wbshopping
