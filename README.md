@@ -1,12 +1,9 @@
 # OcconorDummyWebsite
+> A full-stack application built with SQL-Alchemy and Stripe API
+
 [![Project Version][version-image]][version-url]
-
 [![Frontend][Frontend-image]][Frontend-url]
-
 [![Backend][Backend-image]][Backend-url]
-
-
-A full-stack application built with SQL-Alchemy and Stripe API
 
 ## Table of Contents
 
@@ -59,15 +56,35 @@ python -m app.py
 This project was designed to demonstrate:
 
 * Integrated Stripe Payment within flask
-  * Tech 1 subitem
 * SQL Alchemy DataBase Management
 * Dynamically Loaded Admin Dashboard
 * Session Data
+* Dynamically Loaded Tennis Lesson Pages
 
-* 
+  
 ## Contact
 Feel free if you have any questions regarding the program
 email : stellan.lindrud@gmail.com
 
+
+<!-- Markdown link & img dfn's -->
+
+[header-url]: github-template.png
+[header-link]: https://github.com/alexandrerosseto
+
+[repository-url]: https://github.com/alexandrerosseto/wbshopping
+
+[cloud-provider-url]: https://wbshopping.herokuapp.com
+
+[linkedin-url]: https://www.linkedin.com/in/alexandrerosseto
+
+[wiki]: https://github.com/yourname/yourproject/wiki
+
+[version-image]: https://img.shields.io/badge/Version-1.0.0-brightgreen?style=for-the-badge&logo=appveyor
+[version-url]: https://img.shields.io/badge/version-1.0.0-green
+[Frontend-image]: https://img.shields.io/badge/Frontend-HTML_CSS-blue?style=for-the-badge
+[Frontend-url]: https://img.shields.io/badge/Frontend-HTML_CSS-blue?style=for-the-badge
+[Backend-image]: https://img.shields.io/badge/Backend-Python-important?style=for-the-badge
+[Backend-url]: https://img.shields.io/badge/Backend-Python-important?style=for-the-badge
 
 
