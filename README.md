@@ -20,6 +20,7 @@ This application allows customers to view, contact and sign up for tennis lesson
 The website includes integrated payments with stripe as well as automated statistics and notifications that are sent to the admin
 when someone new has signed up for a lesson. All of which can be accessed and modified through the dashboard.
 
+## Demonstration
 Video Demonstration
 
 ### Built With
@@ -38,7 +39,7 @@ Video Demonstration
   * sqlalchemy
 
 
-## Installation
+### Installation
 
 To install, navigate to root directory of folder and install the requirements
 
@@ -69,7 +70,7 @@ SECRET_KEY='something_super_secret'
 PEOPLEKEY = 'something_super_secret'
 ```
 
-## Features
+### Features
 
 This project was designed to demonstrate:
 
@@ -80,7 +81,7 @@ This project was designed to demonstrate:
 * Dynamically Loaded Tennis Lesson Pages
 
   
-## Contact
+### Contact
 Feel free if you have any questions regarding the program
 
 **email** : [stellan.lindrud@gmail.com](stellan.lindrud@gmail.com)
