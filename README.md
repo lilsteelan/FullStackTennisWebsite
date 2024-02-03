@@ -1,3 +1,4 @@
+[![header][header-url]][header-link]
 # OcconorDummyWebsite
 > A full-stack application built with SQL-Alchemy and Stripe API
 
@@ -64,7 +65,8 @@ This project was designed to demonstrate:
   
 ## Contact
 Feel free if you have any questions regarding the program
-email : stellan.lindrud@gmail.com
+
+**email** : [stellan.lindrud@gmail.com](stellan.lindrud@gmail.com)
 
 
 <!-- Markdown link & img dfn's -->
