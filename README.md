@@ -1,5 +1,5 @@
 [![header][header-url]][header-link]
-# OcconorDummyWebsite
+# Full Stack Dummy Website - Occonor Tennis Club
 > A full-stack application built with SQL-Alchemy and Stripe API
 
 [![Project Version][version-image]][version-url]
