@@ -11,21 +11,30 @@ A full-stack application built with SQL-Alchemy and Stripe API
 
 ## Overview
 
-This application allows customers to view, contact and sign up for tennis lessons.
-The website includes integrated payments with stripe as well as automated statistics sent to the admin, which can be seen through the dashboard
+This application allows customers to view, contact and sign up for tennis lessons, without the need for any third-party interactions. 
+The website includes integrated payments with stripe as well as automated statistics and notifications that are sent to the admin
+when someone new has signed up for a lesson. All of which can be accessed and modified through the dashboard.
 
 Video Demonstration
 
 ### Built With
 Python
+
 HTML
+
 CSS
+
 Flask 
+
 Stripe API
+
 Bycrypt
+
 SQL Alchemy
 
+
 ## Contact
+Feel free if you have any questions regarding the program
 email : stellan.lindrud@gmail.com
 
 
@@ -35,6 +44,7 @@ Integrated Stripe Payment
 Automated & Encrypted Admin Dashboard
 SQL Alchemy database
 Website Scaling
+Session Data
 
 
 
