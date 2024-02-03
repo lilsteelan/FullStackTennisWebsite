@@ -1,6 +1,6 @@
 # OcconorDummyWebsite
 
-A full-stack dummy application built with SQL-Alchemy and Stripe API
+A full-stack application built with SQL-Alchemy and Stripe API
 
 ## Table of Contents
 
@@ -25,12 +25,16 @@ Stripe API
 Bycrypt
 SQL Alchemy
 
-##Contact
+## Contact
 email : stellan.lindrud@gmail.com
 
 
-##Features
-This application allows customers to view and look at different lesson plans, they can then sign up for these lesson plans through an automated
-link here
+## Features
+
+Integrated Stripe Payment
+Automated & Encrypted Admin Dashboard
+SQL Alchemy database
+Website Scaling
+
 
 
