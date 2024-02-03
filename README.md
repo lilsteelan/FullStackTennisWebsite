@@ -1,4 +1,7 @@
 # OcconorDummyWebsite
+[![Project Version][version-image]][version-url]
+[![Frontend][Frontend-image]][Frontend-url]
+[![Backend][Backend-image]][Backend-url]
 
 A full-stack application built with SQL-Alchemy and Stripe API
 
