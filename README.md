@@ -1,4 +1,4 @@
-[![header][header-url]][header-link]
+![Screenshot 2024-02-03 203717](https://github.com/lilsteelan/OcconorDummyWebsite/assets/62084214/b339266e-19d2-44df-95d1-1bfc46cfac6c)[![header][header-url]][header-link]
 # Full Stack Dummy Website 
 > A full-stack application built with SQL-Alchemy and Stripe API
 
@@ -21,6 +21,16 @@ The website includes integrated payments with stripe as well as automated statis
 when someone new has signed up for a lesson. All of which can be accessed and modified through the dashboard.
 
 ## Demonstration
+
+* Home Page
+![Screenshot 2024-02-03 203333](https://github.com/lilsteelan/OcconorDummyWebsite/assets/62084214/7e8a0455-8659-493e-a7a8-8f2fa882cc31)
+
+* Admin Panel
+![Screenshot 2024-02-03 203333](https://github.com/lilsteelan/OcconorDummyWebsite/assets/62084214/7e8a0455-8659-493e-a7a8-8f2fa882cc31)
+
+* Stripe Payment
+![Screenshot 2024-02-03 203555](https://github.com/lilsteelan/OcconorDummyWebsite/assets/62084214/7f1f13af-8875-40ff-a7f5-30ea8b0426ca)
+
 Video Demonstration
 
 ### Built With
