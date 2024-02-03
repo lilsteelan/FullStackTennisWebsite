@@ -52,6 +52,22 @@ Run the file ( debug mode by default )
 python -m app.py
 ```
 
+**Note:** The Stripe payment will not work, as the stripe keys, and payment ID's are private and not publicly available on the repo.
+If you wish to run the program with stripe integration you must implement it yourself through the creation of a .env file and setting the values as follows:
+
+```sh
+STRIPE_PRIVATE_KEY='sk_test_su'
+Court_Kangaroos='price_etc'
+Little_Smash='price_etc'
+Young_Beginners='price_etc'
+Beginner_Intermediate='price_etc'
+Advanced='price_etc'
+Competitive_Squad='price_etc'
+ENDPOINT_SECRET='whsec_etc'
+SECRET_KEY='something_super_secret'
+PEOPLEKEY = 'something_super_secret'
+```
+
 ## Features
 
 This project was designed to demonstrate:
