@@ -23,14 +23,15 @@ when someone new has signed up for a lesson. All of which can be accessed and mo
 ## Demonstration
 
 * Home Page
-![Screenshot 2024-02-03 203333](https://github.com/lilsteelan/OcconorDummyWebsite/assets/62084214/7e8a0455-8659-493e-a7a8-8f2fa882cc31)
+<img src="https://github.com/lilsteelan/OcconorDummyWebsite/assets/62084214/7e8a0455-8659-493e-a7a8-8f2fa882cc31" alt="drawing" width="400"/>
 
 * Admin Panel
-![Screenshot 2024-02-03 203717]()
-<img src="https://github.com/lilsteelan/OcconorDummyWebsite/assets/62084214/b339266e-19d2-44df-95d1-1bfc46cfac6c" alt="drawing" width="200"/>
+<img src="https://github.com/lilsteelan/OcconorDummyWebsite/assets/62084214/b339266e-19d2-44df-95d1-1bfc46cfac6c" alt="drawing" width="400"/>
 
 * Stripe Payment
-![Screenshot 2024-02-03 203555](https://github.com/lilsteelan/OcconorDummyWebsite/assets/62084214/7f1f13af-8875-40ff-a7f5-30ea8b0426ca)
+<img src="https://github.com/lilsteelan/OcconorDummyWebsite/assets/62084214/7f1f13af-8875-40ff-a7f5-30ea8b0426ca" alt="drawing" width="400"/>
+
+*Lesson Selection Page
 
 Video Demonstration
 
@@ -90,6 +91,9 @@ This project was designed to demonstrate:
 * Dynamically Loaded Admin Dashboard
 * Session Data
 * Dynamically Loaded Tennis Lesson Pages
+* Dynamic Admin page
+  * Custom search filters
+  * Options for individual automated entries
 
   
 ### Contact
