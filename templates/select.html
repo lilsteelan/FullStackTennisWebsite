@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Find a Lesson - Canberra Tennis Academy</title>
+
+	<!----Custom css link---->
+	<link rel="stylesheet" type="text/css" href="../static/style.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+
+	<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<!----header start--->
+	<header>
+		<a href="#" class="logo">Lessons</a>
+		<div class="bx bx-menu" id="menu-icon"></div>
+
+		<ul class="navbar">
+			<li><a href="{{ url_for('home') }}">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#">Find a Lesson</a></li>
+			<li><a href="{{ url_for('payment') }}">Payment</a></li>
+		</ul>
+
+		<div class="icons">
+            <a href="{{ url_for('home') }}"><img src="{{ logo }}" alt="" style="height: 50px; width: auto;"></a>
+		</div>
+	</header>
+
+	<!----shop start--->
+	<section class="shop" id="shop">
+        <h1>All Lessons on Offer</h1>
+		<div class="container">
+
+			<a href="#">
+				<div class="box">
+					<img src="{{ TennisCoaching }}" alt="">
+					<h4>Custom Payment</h4>
+					<p>Junior/Senior</p>
+					<h5>Price to be selected</h5>
+				</div>
+			</a>
+
+
+			<a href="{{ url_for('CourtKangaroos') }}">
+				<div class="box">
+					<img src="{{ TennisCoaching }}" alt="">
+					<h4>Court Kangaroos</h4>
+					<p>Juniors</p>
+					<h5>${{lessonData.get('Court Kangaroos')[0]}}</h5>
+				</div>
+			</a>
+
+			<a href="{{ url_for('LittleSmash') }}">
+				<div class="box">
+					<img src="{{ TennisCoaching }}" alt="">
+					<h4>Little Smash</h4>
+					<p>Juniors</p>
+					<h5>${{lessonData.get('Little Smash')[0]}}</h5>
+				</div>
+			</a>
+
+			<a href="{{ url_for('YoungBeginners') }}">
+				<div class="box">
+					<img src="{{ TennisCoaching }}" alt="">
+					<h4>Young Beginners</h4>
+					<p>Juniors</p>
+					<h5>${{lessonData.get('Young Beginners')[0]}}</h5>
+				</div>
+			</a>
+
+			<a href="{{ url_for('BeginnerIntermediate') }}">
+				<div class="box">
+					<img src="{{ TennisCoaching }}" alt="">
+					<h4>Beginner/Intermediate</h4>
+					<p>Juniors</p>
+					<h5>${{lessonData.get('Beginner/Intermediate')[0]}}</h5>
+				</div>
+			</a>
+
+			<a href="{{ url_for('Advanced') }}">
+				<div class="box">
+					<img src="{{ TennisCoaching }}" alt="">
+					<h4>Advanced</h4>
+					<p>Juniors</p>
+					<h5>${{lessonData.get('Advanced')[0]}}</h5>
+				</div>
+			</a>
+
+			<a href="{{ url_for('CompetitiveSquad') }}">
+				<div class="box">
+					<img src="{{ TennisCoaching }}" alt="">
+					<h4>Competitive Squad</h4>
+					<p>Juniors</p>
+					<h5>${{lessonData.get('Competitive Squad')[0]}}</h5>
+				</div>
+			</a>
+
+			<a href="{{ url_for('PrivateLessons') }}">
+				<div class="box">
+					<img src="{{ TennisCoaching }}" alt="">
+					<h4>Private Lessons</h4>
+					<p>Juniors</p>
+					<h5>$180</h5>
+				</div>
+			</a>
+
+            <div class="box">
+				<img src="{{ TennisCoaching }}" alt="">
+				<h4>Coaching</h4>
+                <p>Adults</p>
+				<h5>$180</h5>
+			</div>
+
+            <div class="box">
+				<img src="{{ TennisCoaching }}" alt="">
+				<h4>Fit Hit</h4>
+                <p>Adults</p>
+				<h5>$180</h5>
+			</div>
+
+            <div class="box">
+				<img src="{{ TennisCoaching }}" alt="">
+				<h4>Private Coaching</h4>
+                <p>Adults</p>
+				<h5>$180</h5>
+			</div>
+
+		</div>
+	</section>
+
+	<!----about start--->
+	<section class="about" id="about">
+		<div class="about-content">
+            <h2>About</h2>
+			<p>The CTA’s head coach and owner, Andrew Bulley, is well respected in the industry.  He has achieved the Tennis Australia “High Performance” coaching qualification and also has a Sports Science degree from the University of Canberra.  With over 25 years of coaching and playing experience, Andrew and his staff are ready to help you on court!</p>
+            <!--<img src="img/andrew_bulley.jpg" alt="">-->
+		</div>
+	</section>
+
+	<!----contact start--->
+	<section class="contact" id="contact">
+		<div class="main-contact">
+			<div class="contact-content">
+				<li><a href="#shop">Home</a></li>
+			  <li><a href="#about">About</a></li>
+			  <li><a href="#faq">Find A Lesson</a></li>
+			  <li><a href="#contact">Payment</a></li>
+			</div>
+
+			<div class="contact-content">
+				<li><a href="#">Racquets and Restrings</a></li>
+				<li><a href="#">Holiday Coaching</a></li>
+				<li><a href="#">FAQ</a></li>
+			</div>
+
+			<div class="contact-content">
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Tel: 0418 295 255</a></li>
+                <li><a href="#">Email: <br>andrew@canberratennisacademy.com.au</a></li>
+			</div>
+
+		</div>
+
+	</section>
+
+	<div class="last">
+		<p>© 2023 Canberra Tennis Academy</p>
+	</div>
+
+	<!----custom js link--->
+	<script src="js/script.js"></script>
+
+</body>
+</html>

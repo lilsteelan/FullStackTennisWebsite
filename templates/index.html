@@ -1,0 +1,41 @@
+<html>
+    
+<head>
+    <title>Canberra Tennis Academy</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
+    <link rel="logo icon" href="{{ logo }}" type="image/x-icon">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='style2.css') }}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="banner">
+        <div class="hero">
+            <nav>
+                <a href="/"><img src="{{ logo }}" class="logo"></a>
+                <ul>
+                    <li><a href="https://www.canberratennisacademy.com.au/index.html">Home</a></li>
+                    <li><a href="https://www.canberratennisacademy.com.au/coaches.html">Coaches</a></li>
+                    <li><a href="https://www.canberratennisacademy.com.au/locations.html">Locations</a></li>
+                    <li><a href="https://www.canberratennisacademy.com.au/racquets-and-restrings.html">Restrings</a></li>
+                    <li><a href="https://www.canberratennisacademy.com.au/term-coaching.html">Term Coaching</a></li>
+                </ul>
+                <button class="buttonX" onclick="window.location.href='https://www.canberratennisacademy.com.au/contact-us.html';">Contact us</button>
+            </nav>
+        </div>
+        <div class="phone-logo">
+            <a href="/"><img src="{{ logo }}" class="logo"></a>
+        </div>
+
+        <div class="content">
+            <div class="main-anim">
+                <h1>CANBERRA TENNIS ACADEMY</h1>
+                <h3>Training tomorrow's players</h3>
+                <a href="{{ url_for('select') }}"><button class="button_slide slide_right">Get Started</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Payment - Canberra Tennis Club</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    </head>
+<body>
+
+    <!----header start--->
+	<header>
+		<a href="#" class="logo">Lesson Payment</a>
+		<div class="bx bx-menu" id="menu-icon"></div>
+
+		<ul class="navbar">
+			<li><a href="{{ url_for('home') }}">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="{{ url_for('select') }}">Find a Lesson</a></li>
+			<li><a href="{{ url_for('payment') }}">Payment</a></li>
+		</ul>
+
+		<div class="icons">
+            <a href="{{ url_for('home') }}"><img src="{{ logo }}" alt="" style="height: 50px; width: auto;"></a>
+		</div>
+	</header>
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="{{ ClayCourt }}" width="100%" id="ProductImg" alt="">
+                <div class="small-img-row">
+
+                    <div class="small-img-col">
+                        <img src="{{ ClayCourt }}" width="100%" id="LessonImg" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="{{ ClayCourt }}" width="100%" id="LessonImg" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="{{ ClayCourt }}" width="100%" id="LessonImg" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="{{ ClayCourt }}" width="100%" id="LessonImg" class="small-img" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Home / Lesson Payment</p>
+                <h1>Select a Lesson</h1>
+                <div class="select-box">
+                    <select name="" id="0">
+                        <option value="0">--Juniors--</option>
+                        <option value="1">Court Kangaroos</option>
+                        <option value="2">Little Smash</option>
+                        <option value="3">Young Beginners</option>
+                        <option value="4">Beginner/Intermediate</option>
+                        <option value="5">Advanced</option>
+                        <option value="6">Competitive Squad</option>
+                        <option value="7">Private Lesson</option>
+                        <option value="8">--Adults--</option>
+                        <option value="9">Coaching</option>
+                        <option value="10">Fit Hit</option>
+                        <option value="11">Private Coaching</option>
+
+                    </select>
+                </div>
+                <box-icon type='solid' name='chevron-down' style="width: 10px;height: 10px; display: block;"></box-icon>
+
+                <p><b>Number of Lessons</b></p>
+                <input type="number" min="1" max="20">
+                <h4>$180.00</h4>
+                <h3>Lesson Details</h3>
+                <br>
+                <p>At the intermediate lessons you will learn to play with good technique and <br>socialise with others, as 
+                    well as immerse yourself in the game with several group activities.
+                </p>
+                <a href="#" class="btn" onclick="ShowForm();">Payment</a><br>
+
+                <div class="details" id="detailform">
+                    <div class="inputBox">
+                        <input type="text" required="required">
+                        <span>First Name</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" required="required">
+                        <span>Last Name</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" required="required">
+                        <span>Child's Name</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="email" required="required">
+                        <span>Email</span>
+                    </div>
+
+                    <a href="#" class="btn-3">Continue to Payment</a><br>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementById("LessonImg");
+
+    SmallImg[0].onclick = function()
+    {
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function()
+    {
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function()
+    {
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function()
+    {
+        ProductImg.src = SmallImg[3].src;
+    }
+
+    function ShowForm(){
+        document.getElementById("detailform").style.display = "block";
+    }
+
+    function ShowEmail(){
+        document.getElementById("detailform").style.display = "none";
+    }
+</script>
+
+	<!----custom js link--->
+	<script src="js/script.js"></script>
+</body>
+</html>

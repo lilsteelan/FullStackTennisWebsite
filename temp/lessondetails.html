@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Details - Canberra Tennis Club</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<style>
+    .toggle {
+      --width: 100px;
+      --height: calc(var(--width) / 3);
+      margin-top: 20px;
+      position: relative;
+      display: inline-block;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .toggle input {
+      display: none;
+    }
+
+    .toggle .slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: #ccc;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .toggle .slider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: #fff;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .toggle input:checked+.slider {
+      background-color: #2196F3;
+    }
+
+    .toggle input:checked+.slider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .toggle .labels {
+      position: absolute;
+      top: 11px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      font-size: 12px;
+      font-family: sans-serif;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .toggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      right: 5px;
+      color: #4d4d4d;
+      opacity: 1;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .toggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 5px;
+      color: #ffffff;
+      opacity: 0;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .toggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .toggle input:checked~.labels::before {
+      opacity: 1;
+    }
+  </style>
+<body>
+
+    <!----header start--->
+	<header>
+		<a href="#" class="logo">Lessons</a>
+		<div class="bx bx-menu" id="menu-icon"></div>
+
+		<ul class="navbar">
+			<li><a href="{{ url_for('home') }}">Home</a></li>
+			<li><a href="{{ url_for('select') }}">About</a></li>
+			<li><a href="{{ url_for('select') }}">Find a Lesson</a></li>
+			<li><a href="{{ url_for('payment') }}">Payment</a></li>
+		</ul>
+
+		<div class="icons">
+            <a href="{{ url_for('home') }}"><img src="{{ logo }}" alt="" style="height: 50px; width: auto;"></a>
+		</div>
+	</header>
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="{{ ClayCourt }}" width="100%" id="ProductImg" alt="">
+                <div class="small-img-row">
+
+                    <div class="small-img-col">
+                        <img src="{{ ClayCourt }}" width="100%" id="LessonImg" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="{{ ClayCourt }}" width="100%" id="LessonImg" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="{{ ClayCourt }}" width="100%" id="LessonImg" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="{{ ClayCourt }}" width="100%" id="LessonImg" class="small-img" alt="">
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <table>
+                    <tr>
+                        <th>When?</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #0070df;color: white;">Occonor</td>
+                        <td>{{times.get(name)[0]}}</td>
+                        <td>{{times.get(name)[1]}}</td>
+                        <td>{{times.get(name)[2]}}</td>
+                        <td>{{times.get(name)[3]}}</td>
+                        <td>{{times.get(name)[4]}}</td>
+                        <td>{{times.get(name)[5]}}</td>
+                        <td>{{times.get(name)[6]}}</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #0070df;color: white;">Forrest</td>
+                        <td>{{times.get(name)[7]}}</td>
+                        <td>{{times.get(name)[8]}}</td>
+                        <td>{{times.get(name)[9]}}</td>
+                        <td>{{times.get(name)[10]}}</td>
+                        <td>{{times.get(name)[11]}}</td>
+                        <td>{{times.get(name)[12]}}</td>
+                        <td>{{times.get(name)[13]}}</td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="col-2">
+                <p>Home / Lessons</p>
+                <h1>{{ name }}</h1>
+                <h4>${{ lessonData.get(name)[0] }}</h4>
+                <h3>Lesson Details</h3><br>
+
+                <h5>Duration</h5>
+                <p>{{ lessonData.get(name)[3] }}</p><br>
+
+                <h5>Age Group</h5>
+                <p>{{ lessonData.get(name)[1] }}</p>
+                <br>
+                <p>{{ lessonData.get(name)[4] }}
+                </p>
+                <!--<a href="#" class="btn" onclick="ShowForm();">Select Lesson</a><br>-->
+                <form action="{{ url_for('create_checkout_session') }}" method="post">
+                    <div class="details" id="detailform">
+                        <div class="hidden" style="display:none" >
+                            <input type="text" value="{{ name }}" name="price_id">
+                        </div>
+
+                        <p></p>
+                        <!--<label class="toggle" name="paying_for">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                            <span class="labels" data-on="Last Term" data-off="Next Term"></span>
+                        </label><br>-->
+                        
+                        <button type="submit" class="submitbtn">Continue to Payment</button><br>
+                        <!-- <a href="#" class="btn-2" onclick="ShowEmail();">Try it out!</a><br> -->
+                        <p style="margin-top: 20px">Didn't attend all the lessons?</p>
+                        <input type="number" min="1" max="13">
+                        <a href="#" class="btn-2" onclick="ShowEmail();">Continue to Payment</a><br>
+                    </div>
+                </form>
+                
+
+
+
+                <div class="try-out" id="try-out">
+                    <div class="inputBox" style="padding-top: 10px;">
+                        <input type="email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <a href="#" class="btn-3">Send!</a><br>
+                    <p style="padding-top: 10px;">Please enter your email and we'll contact you!</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementById("LessonImg");
+
+    SmallImg[0].onclick = function()
+    {
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function()
+    {
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function()
+    {
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function()
+    {
+        ProductImg.src = SmallImg[3].src;
+    }
+
+    function ShowForm(){
+        document.getElementById("detailform").style.display = "block";
+        document.getElementById("try-out").style.display = "none";
+    }
+
+    function ShowEmail(){
+        document.getElementById("try-out").style.display = "block";
+        document.getElementById("detailform").style.display = "none";
+    }
+</script>
+
+	<!----custom js link--->
+	<script src="js/script.js"></script>
+</body>
+</html>

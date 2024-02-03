@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Succesful - Occonor Tennis Center</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+    *{
+        font-family: 'Montserrat', sans-serif;
+        color:#626262;
+        overflow: hidden;
+    }
+    h1{
+        margin: -10px;
+    }
+    .content{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+        /* CSS */
+    .button-22 {
+    align-items: center;
+    appearance: button;
+    background-color: #0276FF;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    font-family: "RM Neue",sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    padding: 10px 21px;
+    text-align: center;
+    text-transform: none;
+    transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    }
+
+    .button-22:active {
+    background-color: #006AE8;
+    }
+
+    .button-22:hover {
+    background-color: #1C84FF;
+    }
+</style>
+<body>
+    <div class="content">
+        <h1>Thankyou!</h1>
+        <h4>Your Payment has been confirmed</h4>
+        <a href="{{ url_for('select') }}">
+            <button class="button-22" role="button">Return</button>
+        </a>    
+    </div>
+</body>
+</html>
+
+
+
