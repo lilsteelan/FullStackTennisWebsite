@@ -39,11 +39,6 @@ Video Demonstration
   * sqlalchemy
 
 
-## Contact
-Feel free if you have any questions regarding the program
-email : stellan.lindrud@gmail.com
-
-
 ## Installation
 
 To install, navigate to root directory of folder and install the requirements
@@ -68,6 +63,11 @@ This project was designed to demonstrate:
 * SQL Alchemy DataBase Management
 * Dynamically Loaded Admin Dashboard
 * Session Data
+
+* 
+## Contact
+Feel free if you have any questions regarding the program
+email : stellan.lindrud@gmail.com
 
 
 
